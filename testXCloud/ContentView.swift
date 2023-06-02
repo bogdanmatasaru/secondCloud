@@ -24,11 +24,11 @@ struct ContentView: View {
             return releaseBuild
         } else {
             #if DEBUG
-                return "Debug"
+                return "fallback debug"
             #elseif FABRIC
-                return "Debug"
+                return "fallback Debug fabric"
             #else
-                return "Debug"
+                return "fallback Debug default"
             #endif
         }
     }
