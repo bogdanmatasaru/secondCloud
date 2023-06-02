@@ -21,7 +21,7 @@ struct ContentView: View {
     
     private func setEnvironmentVars() -> String {
         if let releaseBuild = ProcessInfo.processInfo.environment["RELEASE_BUILD"] {
-            return "Debug"
+            return releaseBuild
         } else {
             #if DEBUG
                 return "Debug"
