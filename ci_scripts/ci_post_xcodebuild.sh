@@ -1,4 +1,4 @@
-if [ "$CI_WORKFLOW" = "Firebase Debug Build" ];
+if [ "$CI_WORKFLOW" == *"Firebase"* ];
 then
     echo "Uploading Firebase Debug Build"
     unzip firebase-tools-macos.zip
