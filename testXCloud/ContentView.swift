@@ -14,8 +14,23 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Text(setEnvironmentVars())
         }
         .padding()
+    }
+    
+    private func setEnvironmentVars() -> String {
+        if let releaseBuild = ProcessInfo.processInfo.environment["RELEASE_BUILD"] {
+            return "Debug"
+        } else {
+            #if DEBUG
+                return "Debug"
+            #elseif FABRIC
+                return "Debug"
+            #else
+                return "Debug"
+            #endif
+        }
     }
 }
 
