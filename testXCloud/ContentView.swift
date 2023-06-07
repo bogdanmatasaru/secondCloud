@@ -15,6 +15,11 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
             Text(setEnvironmentVars())
+            List {
+                ForEach(getEnv(), id: \.self) { section in
+                    Text(section)
+                }
+            }
         }
         .padding()
     }
@@ -31,6 +36,15 @@ struct ContentView: View {
                 return "fallback Debug default"
             #endif
         }
+    }
+    
+    func getEnv() -> [String] {
+        var envVAR = [String]()
+        for (key, value) in ProcessInfo.processInfo.environment {
+            print("\(key): \(value)")
+            envVAR.append(key)
+        }
+        return envVAR
     }
 }
 
