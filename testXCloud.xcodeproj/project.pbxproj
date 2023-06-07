@@ -11,6 +11,7 @@
 		43B22C312A20AA6300237190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B22C302A20AA6300237190 /* ContentView.swift */; };
 		43B22C332A20AA6500237190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B22C322A20AA6500237190 /* Assets.xcassets */; };
 		43B22C362A20AA6500237190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B22C352A20AA6500237190 /* Preview Assets.xcassets */; };
+		43BAAA702A30F08E00090395 /* env.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAA6F2A30F08E00090395 /* env.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		43B22C302A20AA6300237190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43B22C322A20AA6500237190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43B22C352A20AA6500237190 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43BAAA6F2A30F08E00090395 /* env.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = env.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				436A2E9A2A20E1B800893FF6 /* Info.plist */,
+				43BAAA6F2A30F08E00090395 /* env.json */,
 				43B22C2E2A20AA6300237190 /* testXCloudApp.swift */,
 				43B22C302A20AA6300237190 /* ContentView.swift */,
 				43B22C322A20AA6500237190 /* Assets.xcassets */,
@@ -129,6 +132,7 @@
 			files = (
 				43B22C362A20AA6500237190 /* Preview Assets.xcassets in Resources */,
 				43B22C332A20AA6500237190 /* Assets.xcassets in Resources */,
+				43BAAA702A30F08E00090395 /* env.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +227,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1212;
-				PRODUCT_BUNDLE_IDENTIFIER = ro.emag.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danteinternational.eMAG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -367,7 +371,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1212;
-				PRODUCT_BUNDLE_IDENTIFIER = ro.emag.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danteinternational.eMAG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -397,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1212;
-				PRODUCT_BUNDLE_IDENTIFIER = ro.emag.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danteinternational.eMAG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
