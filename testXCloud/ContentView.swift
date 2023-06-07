@@ -14,8 +14,27 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Text(Secrets.baseURL)
         }
         .padding()
+    }
+    
+}
+
+struct Secrets {
+    private static func secrets() -> [String: Any] {
+        let fileName = "env"
+        let path = Bundle.main.path(forResource: fileName, ofType: "json")!
+        let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+        return try! JSONSerialization.jsonObject(with: data) as! [String: Any]
+    }
+
+    static var releaseBuild: String {
+        return secrets()["RELEASE_BUILD"] as! String
+    }
+    
+    static var app: String {
+        return "sss"
     }
 }
 
