@@ -8,33 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    var envValue: String? {
+        let path = Bundle.main.path(forResource: "ENV", ofType: "plist")!
+        let url = URL(fileURLWithPath: path)
+        let dict = Dictionary<String, AnyObject>.contentsOf(path: url)
+        return dict["rb"] as? String
+    }
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
-            Text(Secrets.releaseBuild)
+            Text(envValue ?? "alora")
         }
         .padding()
     }
     
 }
 
-struct Secrets {
-    private static func secrets() -> [String: Any] {
-        let fileName = "env"
-        let path = Bundle.main.path(forResource: fileName, ofType: "json")!
-        let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-        return try! JSONSerialization.jsonObject(with: data) as! [String: Any]
-    }
+extension Dictionary {
+    static func contentsOf(path: URL) -> Dictionary<String, AnyObject> {
+        let data = try! Data(contentsOf: path)
+        let plist = try! PropertyListSerialization.propertyList(from: data, options: .mutableContainers, format: nil)
 
-    static var releaseBuild: String {
-        return secrets()["RELEASE_BUILD"] as! String
-    }
-    
-    static var app: String {
-        return "sss"
+        return plist as! [String: AnyObject]
     }
 }
 
