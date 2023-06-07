@@ -269,7 +269,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"testXCloud/Preview Content\"";
-				DEVELOPMENT_TEAM = YQ42N9F655;
+				DEVELOPMENT_TEAM = 22G89L993N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = testXCloud/Info.plist;
@@ -283,7 +283,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1212;
-				PRODUCT_BUNDLE_IDENTIFIER = com.danteinternational.eMAG;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danteinternational.eMAGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -299,7 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"testXCloud/Preview Content\"";
-				DEVELOPMENT_TEAM = YQ42N9F655;
+				DEVELOPMENT_TEAM = 22G89L993N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = testXCloud/Info.plist;
@@ -313,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1212;
-				PRODUCT_BUNDLE_IDENTIFIER = com.danteinternational.eMAG;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danteinternational.eMAGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
