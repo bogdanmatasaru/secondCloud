@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    var envValue: String? {
-        let path = Bundle.main.path(forResource: "Environment", ofType: "plist")!
-        let url = URL(fileURLWithPath: path)
-        let dict = Dictionary<String, AnyObject>.contentsOf(path: url)
-        return dict["rb"] as? String
+    var backendSettingsStatus: String {
+        if environmentConfig.xcodeCloudBuild {
+            if environmentConfig.backendSettingsEnabled {
+                return "Backend Settings Available"
+            } else {
+                return "Backend Settings Unavailable"
+            }
+        } else {
+            return "Other environment"
+        }
     }
     var body: some View {
         VStack {
@@ -20,20 +25,11 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
-            Text(envValue ?? "alora")
+            Text(backendSettingsStatus)
         }
         .padding()
     }
     
-}
-
-extension Dictionary {
-    static func contentsOf(path: URL) -> Dictionary<String, AnyObject> {
-        let data = try! Data(contentsOf: path)
-        let plist = try! PropertyListSerialization.propertyList(from: data, options: .mutableContainers, format: nil)
-
-        return plist as! [String: AnyObject]
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {

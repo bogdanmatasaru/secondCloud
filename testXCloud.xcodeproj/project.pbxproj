@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43278B6E2A31FB0F00DCA974 /* Environment.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43278B652A31FB0F00DCA974 /* Environment.plist */; };
+		43278B742A31FBA600DCA974 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43278B732A31FBA600DCA974 /* Environment.swift */; };
 		43B22C2F2A20AA6300237190 /* testXCloudApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B22C2E2A20AA6300237190 /* testXCloudApp.swift */; };
 		43B22C312A20AA6300237190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B22C302A20AA6300237190 /* ContentView.swift */; };
 		43B22C332A20AA6500237190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B22C322A20AA6500237190 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		43278B652A31FB0F00DCA974 /* Environment.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Environment.plist; sourceTree = "<group>"; };
+		43278B732A31FBA600DCA974 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		436A2E9A2A20E1B800893FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		43B22C2B2A20AA6300237190 /* testXCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testXCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B22C2E2A20AA6300237190 /* testXCloudApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testXCloudApp.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				43278B652A31FB0F00DCA974 /* Environment.plist */,
+				43278B732A31FBA600DCA974 /* Environment.swift */,
 			);
 			path = Environment;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43B22C312A20AA6300237190 /* ContentView.swift in Sources */,
+				43278B742A31FBA600DCA974 /* Environment.swift in Sources */,
 				43B22C2F2A20AA6300237190 /* testXCloudApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
