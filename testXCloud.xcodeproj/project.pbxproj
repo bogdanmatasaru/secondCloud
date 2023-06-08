@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43278B5B2A31F9FB00DCA974 /* eMag in Resources */ = {isa = PBXBuildFile; fileRef = 43278B5A2A31F9FB00DCA974 /* eMag */; };
 		43B22C2F2A20AA6300237190 /* testXCloudApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B22C2E2A20AA6300237190 /* testXCloudApp.swift */; };
 		43B22C312A20AA6300237190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B22C302A20AA6300237190 /* ContentView.swift */; };
 		43B22C332A20AA6500237190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B22C322A20AA6500237190 /* Assets.xcassets */; };
 		43B22C362A20AA6500237190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B22C352A20AA6500237190 /* Preview Assets.xcassets */; };
-		43BAAA782A30F61D00090395 /* ENV.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAA772A30F61D00090395 /* ENV.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43278B5A2A31F9FB00DCA974 /* eMag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eMag; sourceTree = SOURCE_ROOT; };
 		436A2E9A2A20E1B800893FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		43B22C2B2A20AA6300237190 /* testXCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testXCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B22C2E2A20AA6300237190 /* testXCloudApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testXCloudApp.swift; sourceTree = "<group>"; };
 		43B22C302A20AA6300237190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43B22C322A20AA6500237190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43B22C352A20AA6500237190 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		43BAAA772A30F61D00090395 /* ENV.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = ENV.plist; path = ci_scripts/ENV.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 		43B22C2D2A20AA6300237190 /* testXCloud */ = {
 			isa = PBXGroup;
 			children = (
-				43BAAA772A30F61D00090395 /* ENV.plist */,
+				43278B5A2A31F9FB00DCA974 /* eMag */,
 				436A2E9A2A20E1B800893FF6 /* Info.plist */,
 				43B22C2E2A20AA6300237190 /* testXCloudApp.swift */,
 				43B22C302A20AA6300237190 /* ContentView.swift */,
@@ -130,8 +130,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43278B5B2A31F9FB00DCA974 /* eMag in Resources */,
 				43B22C362A20AA6500237190 /* Preview Assets.xcassets in Resources */,
-				43BAAA782A30F61D00090395 /* ENV.plist in Resources */,
 				43B22C332A20AA6500237190 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
