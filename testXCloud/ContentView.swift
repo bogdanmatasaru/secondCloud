@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var envValue: String? {
-        let path = Bundle.main.path(forResource: "env", ofType: "plist")!
+        let path = Bundle.main.path(forResource: "Environment", ofType: "plist")!
         let url = URL(fileURLWithPath: path)
         let dict = Dictionary<String, AnyObject>.contentsOf(path: url)
         return dict["rb"] as? String
