@@ -8,4 +8,5 @@ fi
 echo "Creating release notes"
 TESTFLIGHT_DIR_PATH=../TestFlight
 mkdir $TESTFLIGHT_DIR_PATH
-echo "BRANCH: ${CI_BRANCH} \n\nRelease Notes:\n $(git log -3 --pretty=%B) \n ${CI_GIT_REF}" > $TESTFLIGHT_DIR_PATH/WhatToTest.en-US.txt
+echo "BRANCH: ${CI_BRANCH} " > $TESTFLIGHT_DIR_PATH/WhatToTest.en-US.txt
+git fetch --deepen 3 && git log -3 --pretty=format:"%s" >> $TESTFLIGHT_DIR_PATH/WhatToTest.en-US.txt
