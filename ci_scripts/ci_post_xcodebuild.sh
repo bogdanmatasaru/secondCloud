@@ -9,4 +9,6 @@ echo "Creating release notes"
 TESTFLIGHT_DIR_PATH=../TestFlight
 mkdir $TESTFLIGHT_DIR_PATH
 echo "BRANCH: ${CI_BRANCH} " > $TESTFLIGHT_DIR_PATH/WhatToTest.en-US.txt
+echo " " >> $TESTFLIGHT_DIR_PATH/WhatToTest.en-US.txt
+echo "Last 3 commits:" >> $TESTFLIGHT_DIR_PATH/WhatToTest.en-US.txt
 git fetch --deepen 3 && git log -3 --pretty=format:"%s" >> $TESTFLIGHT_DIR_PATH/WhatToTest.en-US.txt
