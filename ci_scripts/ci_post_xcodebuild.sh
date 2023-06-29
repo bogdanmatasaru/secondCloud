@@ -17,9 +17,10 @@ git fetch --deepen 3 && git log -3 --pretty=format:"%s" >> $TESTFLIGHT_DIR_PATH/
 echo "Creating Webhook to jenkins release branch job"
 LOGIN="emag"
 PASSWORD="Emagdev11"
+BRANCH=${CI_BRANCH}
 COUNTRY="RO"
-APPVERSION="3.21.3"
-BUILDNUMBER="89"
-JSON_STRING='{"login":"'$LOGIN'","password":"'$PASSWORD'","releaseBranch":"origin/'${CI_BRANCH}'","country":"'$COUNTRY'","appVersion":"'$APPVERSION'","buildNumber":"'$BUILDNUMBER'"}'
-curl -X POST https://smee.io/GRcx28fLrDxi3nRP -H 'Content-Type: application/json' -d JSON_STRING 
+APPVERSION=4.0.0
+BUILDNUMBER=${CI_BUILD_NUMBER}
+JSON_STRING='{"login":"'$LOGIN'","password":"'$PASSWORD'","releaseBranch":"origin/'$BRANCH'","country":"'$COUNTRY'","appVersion":"'$APPVERSION'","buildNumber":"'$BUILDNUMBER'"}'
+curl -X POST https://smee.io/GRcx28fLrDxi3nRP -H 'Content-Type: application/json' -d "$JSON_STRING"
 
