@@ -12,3 +12,8 @@ echo "BRANCH: ${CI_BRANCH} " > $TESTFLIGHT_DIR_PATH/WhatToTest.en-US.txt
 echo " " >> $TESTFLIGHT_DIR_PATH/WhatToTest.en-US.txt
 echo "Last 3 commits:" >> $TESTFLIGHT_DIR_PATH/WhatToTest.en-US.txt
 git fetch --deepen 3 && git log -3 --pretty=format:"%s" >> $TESTFLIGHT_DIR_PATH/WhatToTest.en-US.txt
+
+
+echo "Creating Webhook to jenkins release branch job"
+curl -X POST https://smee.io/GRcx28fLrDxi3nRP -H 'Content-Type: application/json' -d '{"login":"emag","password":"Emagdev11","releaseBranch":"origin/develop","country":"ro","appVersion":"3.21.3","buildNumber":"89"}'
+
